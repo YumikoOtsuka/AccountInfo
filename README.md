@@ -1,18 +1,22 @@
-# Salesforce DX Project: Next Steps
+# 概要
+noteでブログを書いています。→ [noteブログ](https://note.com/yumiko_otsuka)
+<bR>この記事でAIコーディングエージェント「Cline」にLWCを作ってもらいました。 → [note記事](https://note.com/yumiko_otsuka/n/n6aa5566826a3)
+<bR>AIが作るコードがどんなものかの参考になればと思い、アップロードしておきます。
+<bR>※一部自分で作ったファイルもあげてしまったので、AIが作成したソースは以下に明示します。
+ 
+# 作成ファイル
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## カスタムオブジェクト
+[force-app/main/default/objects/Account_Information__c](https://github.com/YumikoOtsuka/AccountInfo/tree/main/force-app/main/default/objects/Account_Information__c)
 
-## How Do You Plan to Deploy Your Changes?
+## Apexクラス
+[force-app/main/default/classes/AccountInfoController.cls](https://github.com/YumikoOtsuka/AccountInfo/blob/main/force-app/main/default/classes/AccountInfoController.cls)
+<bR>※cls-meta.xmlは作成されなかったので手動で作成しました
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## LWC
+[force-app/main/default/lwc/accountInfo/accountInfo.js](https://github.com/YumikoOtsuka/AccountInfo/blob/main/force-app/main/default/lwc/accountInfo/accountInfo.js)
+[force-app/main/default/lwc/accountInfo/accountInfo.js-meta.xml](https://github.com/YumikoOtsuka/AccountInfo/blob/main/force-app/main/default/lwc/accountInfo/accountInfo.js-meta.xml)
 
-## Configure Your Salesforce DX Project
+## HTML
+[force-app/main/default/lwc/accountInfo/accountInfo.html](https://github.com/YumikoOtsuka/AccountInfo/blob/main/force-app/main/default/lwc/accountInfo/accountInfo.html)
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
