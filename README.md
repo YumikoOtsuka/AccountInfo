@@ -15,7 +15,7 @@ noteでブログを書いています。→ [noteブログ](https://note.com/yum
 
 ## LWC
 [force-app/main/default/lwc/accountInfo/accountInfo.js](https://github.com/YumikoOtsuka/AccountInfo/blob/main/force-app/main/default/lwc/accountInfo/accountInfo.js)
-[force-app/main/default/lwc/accountInfo/accountInfo.js-meta.xml](https://github.com/YumikoOtsuka/AccountInfo/blob/main/force-app/main/default/lwc/accountInfo/accountInfo.js-meta.xml)
+<bR>[force-app/main/default/lwc/accountInfo/accountInfo.js-meta.xml](https://github.com/YumikoOtsuka/AccountInfo/blob/main/force-app/main/default/lwc/accountInfo/accountInfo.js-meta.xml)
 
 ## HTML
 [force-app/main/default/lwc/accountInfo/accountInfo.html](https://github.com/YumikoOtsuka/AccountInfo/blob/main/force-app/main/default/lwc/accountInfo/accountInfo.html)
