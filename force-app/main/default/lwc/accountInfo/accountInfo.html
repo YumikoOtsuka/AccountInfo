@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Account Information" icon-name="standard:account">
+        <div class="slds-m-around_medium">
+            <template if:true={accountInfoId}>
+                <!-- Account_Information__c レコードが見つかった場合 -->
+                <template if:true={imageUrl}>
+                    <!-- 画像ファイルが見つかった場合 -->
+                    <img src={imageUrl} alt="Account Image" style="max-width: 100%; height: auto;" />
+                </template>
+                <template if:false={imageUrl}>
+                    <!-- 画像ファイルが見つからない場合 -->
+                    <p>No image file found for this account information record.</p>
+                    <!-- ここに Description__c などの他の情報を表示するコードを追加できます -->
+                </template>
+            </template>
+            <template if:false={accountInfoId}>
+                <!-- Account_Information__c レコードが見つからない場合 -->
+                <template if:true={isLoading}>
+                    <lightning-spinner alternative-text="Loading..." size="small"></lightning-spinner>
+                </template>
+                <template if:false={isLoading}>
+                     <p>No account information record found for this account.</p>
+                </template>
+            </template>
+            <template if:true={error}>
+                 <p>Error loading account information: {error}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
